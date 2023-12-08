@@ -1,1 +1,0 @@
-# QuantumTradeLogic.github.io
