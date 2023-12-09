@@ -17,7 +17,7 @@ title: Perma Holdings
 description: >- # this means to ignore newlines until "baseurl:"
   For as long as space endures, And for as long as living beings remain, Until then may I too abide, To dispel the misery of the world.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://premaholdings.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  luispic2021
 
 # Build settings
