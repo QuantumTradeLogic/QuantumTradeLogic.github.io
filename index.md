@@ -4,4 +4,5 @@
 
 layout: home
 ---
-## Securing our future, one trade at a time
+
+Securing our future, one trade at a time.
