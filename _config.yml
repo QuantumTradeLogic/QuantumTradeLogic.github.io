@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Quantum Trade Logic by Perma Holdings
+title: Perma Holdings
 description: >- # this means to ignore newlines until "baseurl:"
   For as long as space endures, And for as long as living beings remain, Until then may I too abide, To dispel the misery of the world.
 baseurl: "" # the subpath of your site, e.g. /blog
