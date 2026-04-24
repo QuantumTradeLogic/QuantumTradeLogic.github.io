@@ -1,24 +1,75 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Perma Holdings LLC</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-color: var(--color-midnight);
+    }
+    .error-number {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 300;
+      color: rgba(154, 125, 74, 0.2);
+      line-height: 1;
+      display: block;
+      margin-bottom: var(--space-3);
+    }
+    .error-message {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 300;
+      color: var(--color-white);
+      margin-bottom: var(--space-3);
+    }
+    .error-body {
+      color: rgba(255, 255, 255, 0.45);
+      margin-bottom: var(--space-6);
+      max-width: none;
+    }
+  </style>
+</head>
+<body>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+  <header class="site-header scrolled">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">
+        <span class="logo-monogram">PH</span>
+        <span class="logo-wordmark">Perma Holdings</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/approach.html">Approach</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
-  <h1>404</h1>
+  <div class="error-page">
+    <div class="container">
+      <span class="error-number">404</span>
+      <p class="error-message">Page not found.</p>
+      <p class="error-body">The page you&rsquo;re looking for doesn&rsquo;t exist or has been moved.</p>
+      <a href="/" class="btn btn-ghost">Return Home &rarr;</a>
+    </div>
+  </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
