@@ -10,8 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
     .error-page {
-      min-height: 100vh;
+      flex: 1;
+      min-height: 60vh;
       display: flex;
       align-items: center;
       background-color: var(--color-midnight);
@@ -69,6 +74,31 @@
       <a href="/" class="btn btn-ghost">Return Home &rarr;</a>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="site-logo">
+            <span class="logo-monogram">PH</span>
+            <span class="logo-wordmark">Perma Holdings</span>
+          </a>
+          <p class="footer-tagline">Patient capital. Permanent conviction.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="/about.html">About</a>
+          <a href="/approach.html">Approach</a>
+          <a href="/portfolio.html">Portfolio</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <div class="footer-legal">
+          <p>&copy; 2022 Perma Holdings LLC. All rights reserved.</p>
+          <p>Not an investment advisor. For informational purposes only.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">Perma Holdings LLC &middot; Private Holding Company</div>
+    </div>
+  </footer>
 
   <script src="/assets/js/main.js"></script>
 </body>
