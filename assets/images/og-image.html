@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #111827;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .left-accent {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, transparent 0%, #9A7D4A 20%, #9A7D4A 80%, transparent 100%);
+    }
+
+    .watermark {
+      position: absolute;
+      right: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 400px;
+      font-weight: 600;
+      color: rgba(154, 125, 74, 0.06);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .content {
+      padding: 0 96px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #9A7D4A;
+      margin-bottom: 28px;
+    }
+
+    .wordmark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 80px;
+      font-weight: 300;
+      color: #FFFFFF;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .rule {
+      width: 56px;
+      height: 1px;
+      background: rgba(154, 125, 74, 0.45);
+      margin-bottom: 32px;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.4;
+      margin-bottom: 52px;
+    }
+
+    .domain {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.22);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-accent"></div>
+  <div class="watermark">PH</div>
+
+  <div class="content">
+    <span class="eyebrow">Est. 2022 &nbsp;&middot;&nbsp; Private Holding Company</span>
+    <div class="wordmark">Perma Holdings</div>
+    <div class="rule"></div>
+    <p class="tagline">Patient capital. Permanent conviction.</p>
+    <span class="domain">permaholdings.com</span>
+  </div>
+
+</body>
+</html>
